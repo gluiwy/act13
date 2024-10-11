@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get("import", [App\Http\Controllers\ImportUsers::class, 'import']);
+Route::get("export", [App\Http\Controllers\ExportFile::class, 'export']);
